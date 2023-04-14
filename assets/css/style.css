@@ -549,8 +549,8 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
-  transition: transfrom var(--transition-2);
+  gap: 20px;
+  transition: transform var(--transition-2);
 }
 
 .slider-item { min-width: 100% }
@@ -614,7 +614,7 @@ a {
 .feature-card .card-banner { border-radius: var(--radius-16); }
 
 .feature-card .card-wrapper { margin-block-end: 24px; }
-.feature .headline-3:is(.card-title) {color: aqua;}
+
 .feature .profile-card:is(.card-title, .card-subtitle) {color: var(--text-slate-gray); }
 
 .feature .profile-card .card-title { font-weight: var(--weight-bold); }
@@ -639,11 +639,11 @@ a {
   content: "";
   position: absolute;
   top: -13px;
-  left: -20;
+  left: -20px;
   width: 48px;
   height: 48px;
   background-color: var(--bg-oxford-blue-2);
-  border-radius: var(--radius-circle);
+  border-radius: var(--radius-circle); 
   z-index: -1;
 }
 
@@ -1177,54 +1177,6 @@ a {
 
 
 }
-
-
-
-
-/**
-* responsive for larger than 768px screen
-*/
-
-@media (min-width: 768px) {
-
-  /**
-  * custom property
-  */
-
-  root {
-
-    /**
-    *typography
-    */
-     
-    /*font size*/
-    --fontSize-1: 6.4rem;
-    --fontSize-2: 4.5rem;
-
-  }
-
-
-
-
-    /** 
-    *reused style
-    */
-
-  .container { max-width: 720px; }
-
-
-
-
-  /**
-  *recent post
-  */
-
-  .recent-post-card { grid-template-columns: 0.7fr 1fr; }
-
-
-}
-
-
 
 
 /**

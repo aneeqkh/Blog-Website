@@ -21,7 +21,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-navbar-toggler]");
 
-const toggleNav =() => {
+const toggleNav = () => {
   navbar.classList.toggle("active");
   document.body.classList.toggle("nav-active");
 }    
@@ -39,7 +39,7 @@ const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]")
 
 
-window.addEventListener("scroll",() => {
+window.addEventListener("scroll", () => {
     if (window.scrollY > 100) {
         header.classList.add("active");
         backTopBtn.classList.add("active");
